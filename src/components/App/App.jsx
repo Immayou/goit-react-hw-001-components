@@ -1,3 +1,4 @@
+import { Wrapper } from "./App.styled";
 import { Profile } from "../Profile/Profile";
 import user from '../../data-information/user';
 
@@ -13,7 +14,7 @@ import transactions from '../../data-information/transactions';
 export const App = () => {
  const { username, tag, location, avatar, stats } = user
   return (
-    <>
+    <Wrapper>
       <Profile 
           username={username}
           tag={tag}
@@ -28,7 +29,8 @@ export const App = () => {
        <FriendList friends={friends}/>
        
        <TransactionHistory items={transactions}/>
-    </>
+    </Wrapper>
 
   );
 };
+

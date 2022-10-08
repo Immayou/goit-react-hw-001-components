@@ -27,12 +27,18 @@ background-color: cadetblue;
 `
 
 export const TableRow = styled.tr`
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 :nth-of-type(odd) {
     background-color: rgb(161, 192, 197);
   }
 :nth-of-type(even) {
     background-color: rgb(216, 240, 243);
+  }
+
+  :hover {
+      transform: scale(1.02);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
 `

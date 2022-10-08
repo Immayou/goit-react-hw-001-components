@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Container = styled.div`
 width: 420px;
-margin: 0 auto 40px auto;
+margin: 0 auto 60px auto;
 background-color: #fff;
 border-radius: 6px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -51,7 +51,7 @@ width: 33.3333%;
 min-height: 80px;
 background-color: #EEEEEE;
 
-:first-child {
+:first-of-type {
     border-right: 1px solid darkgray;
 }
 :last-child {

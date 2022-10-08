@@ -31,7 +31,7 @@ export const InfoText = styled.p`
 color:gray;
 font-size: 16px;
 line-height: 1.17;
-:not(:last-child) {
+:not(:last-of-type) {
     margin-bottom: 8px;
 }
 `
@@ -58,7 +58,7 @@ background-color: #EEEEEE;
     border-bottom-left-radius: 6px;
 }
 
-:last-child {
+:last-of-type {
     border-left: 1px solid darkgray;
     border-bottom-right-radius: 6px;
 }

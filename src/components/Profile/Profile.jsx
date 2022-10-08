@@ -8,7 +8,6 @@ export const Profile = ({ username, tag, location, avatar, followers, views, lik
     <Image
       src={avatar} 
       alt="User avatar"
-      class="avatar"
     />
     <InfoMainText>{username}</InfoMainText>
     <InfoText>@{tag}</InfoText>

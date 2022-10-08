@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-function getRandomHexColor() {
+const getRandomHexColor = () => {
     return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
   }
 
@@ -37,11 +37,11 @@ background-color: ${getRandomHexColor()};
   border-bottom-left-radius: 4px;
 }
 
-:last-child {
+:last-of-type {
   border-bottom-right-radius: 4px;
 }
 
-:not(:last-child) {
+:not(:last-of-type) {
     border-right: 1px solid #EEEEEE;
 }
 `

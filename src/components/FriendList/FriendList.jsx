@@ -6,7 +6,7 @@ export const FriendList = ({friends}) => {
     <BoxList>
       {friends.map(({id, name, isOnline, avatar}) => (
         <BoxItem key = {id}>
-        <IsOnlineSymbol>{isOnline}</IsOnlineSymbol>
+        <IsOnlineSymbol active={isOnline === true}></IsOnlineSymbol>
         <Image src={avatar} alt="User avatar" width="48" />
         <FriendName>{name}</FriendName>
       </BoxItem>))}

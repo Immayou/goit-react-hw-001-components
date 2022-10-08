@@ -18,6 +18,7 @@ border-radius: 50%;
 
 export const TopBox = styled.div`
 padding: 25px 0 25px 0;
+
 `
 
 export const InfoMainText = styled.p`

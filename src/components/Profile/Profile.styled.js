@@ -40,6 +40,8 @@ export const BottomBox = styled.ul`
 display: flex;
 align-items: center;
 border-top: 1px solid darkgray;
+border-bottom-left-radius: 6px;
+border-bottom-right-radius: 6px;
 `
 
 export const BottomBoxItem = styled.li`
@@ -53,9 +55,12 @@ background-color: #EEEEEE;
 
 :first-of-type {
     border-right: 1px solid darkgray;
+    border-bottom-left-radius: 6px;
 }
+
 :last-child {
     border-left: 1px solid darkgray;
+    border-bottom-right-radius: 6px;
 }
 `
 

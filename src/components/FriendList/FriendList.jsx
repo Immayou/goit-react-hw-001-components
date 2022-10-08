@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types'; 
-import { BoxList, BoxItem, Image, FriendName } from "./FriendList.styled";
+import { BoxList, BoxItem, Image, FriendName, IsOnlineSymbol } from "./FriendList.styled";
 
 export const FriendList = ({friends}) => {
     return (
     <BoxList>
       {friends.map(({id, name, isOnline, avatar}) => (
         <BoxItem key = {id}>
-        <span>{isOnline}</span>
+        <IsOnlineSymbol>{isOnline}</IsOnlineSymbol>
         <Image src={avatar} alt="User avatar" width="48" />
         <FriendName>{name}</FriendName>
       </BoxItem>))}

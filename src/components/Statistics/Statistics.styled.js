@@ -21,6 +21,8 @@ line-height: 1.33;
 export const List = styled.ul`
 display: flex;
 align-items: center;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
 `
 export const ListItem = styled.li`
 display: flex;
@@ -31,7 +33,13 @@ width: 20%;
 min-height: 80px;
 background-color: ${getRandomHexColor()};
 
-border-bottom-left-radius: 50px;
+:first-of-type {
+  border-bottom-left-radius: 4px;
+}
+
+:last-child {
+  border-bottom-right-radius: 4px;
+}
 
 :not(:last-child) {
     border-right: 1px solid #EEEEEE;

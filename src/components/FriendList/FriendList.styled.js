@@ -13,6 +13,7 @@ display: flex;
 align-items: center;
 width: 100%;
 min-height: 80px;
+padding: 12px;
 border-radius: 6px;
 background-color: #fff;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -21,10 +22,19 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1p
 }
 `
 
+export const IsOnlineSymbol = styled.span`
+width: 25px;
+height: 25px;
+margin-right: 12px;
+border-radius: 50%;
+background-color: #000;
+`
+
 export const Image = styled.img`
 width: 48px;
 height: 48px;
-border-radius: 50%;
+margin-right: 12px;
+border-radius: 8px;
 `
 
 export const FriendName = styled.p`

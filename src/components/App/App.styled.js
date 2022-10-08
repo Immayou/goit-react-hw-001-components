@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
-background-color: black;
+background-color: azure;
+text-align: center;
 `

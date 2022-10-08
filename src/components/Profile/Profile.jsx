@@ -1,34 +1,35 @@
 import PropTypes from 'prop-types'; 
+import { Container, Image, TopBox, InfoMainText, InfoText, BottomBox, BottomBoxItem } from "./Profile.styled";
 
 export const Profile = ({ username, tag, location, avatar, followers, views, likes }) => {
     return (
-<div class="profile">
-  <div class="description">
-    <img
+<Container>
+  <TopBox>
+    <Image
       src={avatar} 
       alt="User avatar"
       class="avatar"
     />
-    <p class="name">{username}</p>
-    <p class="tag">@{tag}</p>
-    <p class="location">{location}</p>
-  </div>
+    <InfoMainText>{username}</InfoMainText>
+    <InfoText>@{tag}</InfoText>
+    <InfoText>{location}</InfoText>
+  </TopBox>
 
-  <ul class="stats">
-    <li>
-      <span class="label">Followers</span>
-      <span class="quantity">{followers}</span>
-    </li>
-    <li>
-      <span class="label">Views</span>
-      <span class="quantity">{views}</span>
-    </li>
-    <li>
-      <span class="label">Likes</span>
-      <span class="quantity">{likes}</span>
-    </li>
-  </ul>
-</div>
+  <BottomBox>
+    <BottomBoxItem>
+      <span>Followers</span>
+      <span>{followers}</span>
+    </BottomBoxItem>
+    <BottomBoxItem>
+      <span>Views</span>
+      <span>{views}</span>
+    </BottomBoxItem>
+    <BottomBoxItem>
+      <span>Likes</span>
+      <span>{likes}</span>
+    </BottomBoxItem>
+  </BottomBox>
+</Container>
     )
 };
 

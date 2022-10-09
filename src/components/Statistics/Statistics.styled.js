@@ -1,8 +1,5 @@
 import styled from "@emotion/styled";
-
-const getRandomHexColor = () => {
-    return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-  }
+import { getRandomHexColor} from '../Utils/GetRandomHexColor';
 
 export const Box = styled.section`
 width: 500px;
@@ -31,7 +28,8 @@ align-items: center;
 justify-content: center;
 width: 20%;
 min-height: 80px;
-background-color: ${getRandomHexColor()};
+background-color: ${ (p) => {
+  return getRandomHexColor()}};
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 :first-of-type {

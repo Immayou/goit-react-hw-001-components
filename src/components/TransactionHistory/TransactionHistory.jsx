@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'; 
-import { Table, TableHeading, TableItem, TableRow, TableRowHead } from "./TransactionHistory";
+import { Table, TableHeading, TableItem, TableRow, TableRowHead } from "./TransactionHistory.styled";
 
 export const TransactionHistory = ({items}) => {
     return (

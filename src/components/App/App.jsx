@@ -9,7 +9,7 @@ import data from '../../data-information/data-json';
 import { FriendList } from "../FriendList/FriendList";
 import friends from '../../data-information/friends';
 
-import { TransactionHistory } from "../TransactionHistory/TransactionHistore";
+import { TransactionHistory } from "../TransactionHistory/TransactionHistory";
 import transactions from '../../data-information/transactions';
 
 export const App = () => {
